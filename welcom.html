@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Back</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #000;
+        }
+        #better{
+            color: white;
+            text-align: center;
+        }
+        .main-box{
+            background-color: white;
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            left: 24%;
+            top: 14%;
+            border-radius: 15px;
+        }
+        .main-box h1{
+            font-size: large;
+            color: black;
+            background-color: white;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+        #mail{
+            background-color: white;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            border: none;
+            background-color: #ccc;
+            opacity: 0.8;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+            outline: none;
+        }
+        #pass{
+            background-color: white;
+            position: absolute;
+            top: 28%;
+            left: 5%;
+            border: none;
+            background-color: #ccc;
+            padding: 10px;
+            opacity: 0.8;
+            border-radius: 10px;
+            width: 250px;
+            outline: none;
+        }
+        h2{
+            font-size: x-small;
+            position: absolute;
+            left: 65%;
+            top: 40%;
+            background-color: white;
+        }
+        .main-box a{
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border-radius: 17px;
+            position: absolute;
+            top: 47%;
+            left: 5%;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .main-box a:hover{
+            background-color: skyblue;
+            color: black;
+        }
+        h3{
+            background-color: white;
+            font-size: xx-small;
+            position: absolute;
+            top: 61%;
+            left: 39%;
+            opacity: 0.6;
+        }
+        #google{
+            height: 30px;
+            background-color: white;
+            position: absolute;
+            top: 70%;
+            left: 35%;
+            border: 1px solid darkgrey;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #google:hover{
+            background-color: antiquewhite;
+            cursor: pointer;
+            padding: 2px;
+        }
+        #apple{
+            height: 30px;
+            background-color: #000;
+            color: white;
+            position: absolute;
+            top: 70%;
+            left: 53%;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #apple:hover{
+           padding: 2px;
+            cursor: pointer;
+        }
+        .ay{
+            position: absolute;
+            top: 95%;
+            left: 43%;
+            font-weight: bold;
+            color: blue;
+            background-color: #fff;
+            font-size: larger;
+            border: 1px solid blue;
+            padding: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .ay:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+        .second{
+            background-color: white;
+            height: 400px;
+            width: 300px;
+            position: absolute;
+            left: 55%;
+            top: 14%;
+            border-radius: 15px;
+        }
+        .welcome{
+            font-size: large;
+            color: black;
+            background-color: white;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+        .mail{
+            background-color: white;
+            position: absolute;
+            top: 15%;
+            left: 5%;
+            border: none;
+            background-color: #ccc;
+            opacity: 0.8;
+            padding: 10px;
+            border-radius: 10px;
+            width: 250px;
+            outline: none;
+        }
+        .pass{
+            background-color: white;
+            position: absolute;
+            top: 28%;
+            left: 5%;
+            border: none;
+            background-color: #ccc;
+            padding: 10px;
+            opacity: 0.8;
+            border-radius: 10px;
+            width: 250px; 
+            outline: none;  
+        }
+        .forget{
+            font-size: x-small;
+            position: absolute;
+            left: 65%;
+            top: 40%;
+            background-color: white;
+        }
+        .link{
+            text-decoration: none;
+            color: white;
+            background-color: blue;
+            border-radius: 17px;
+            position: absolute;
+            top: 47%;
+            left: 5%;
+            padding: 10px;
+            width: 250px;
+            text-align: center;
+        }
+        .link:hover{
+            color: #ccc;
+            background-color: #000;
+        }
+        .log{
+            background-color: white;
+            font-size: xx-small;
+            position: absolute;
+            top: 61%;
+            left: 39%;
+            opacity: 0.6;
+        }
+        h4{
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            width: 230px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid grey;
+            padding: 8px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .google{
+            height: 22px;
+            background-color: white;
+            position: absolute;
+            top: 72%;
+            left: 19%;
+            cursor: pointer;
+        }
+        h5{
+            font-size: medium;
+            position: absolute;
+            top: 84%;
+            left: 10%;
+            width: 230px;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid grey;
+            padding: 8px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .apple{
+            height: 22px;
+            background-color: white;
+            position: absolute;
+            top: 86%;
+            left: 19%;
+            cursor: pointer;
+        }
+        .be{
+            position: absolute;
+            top: 96%;
+            left: 43%;
+            font-weight: bold;
+            color: red;
+            background-color: #fff;
+            font-size: larger;
+            border: 1px solid red;
+            padding: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .be:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="better">WHICH IS BETTER?</h1>
+    <div class="main-box">
+        <h1>Welcome Back!</h1>
+        <input type="text" name="Email" id="mail" placeholder="Email">
+        <input type="text" name="Password" id="pass" placeholder="Password">
+        <h2>Forget Password?</h2>
+        <a href="#">Log In</a>
+        <h3>Or Log in With</h3>
+        <img src="./google.png" id="google">
+        <img src="./apple2.png" id="apple">
+        <p class="ay">A</p>
+    </div>
+
+    <div class="second">
+        <h1 class="welcome">Welcome Back!</h1>
+        <input type="text" name="Email" class="mail" placeholder="Email">
+        <input type="text" name="Password" class="pass" placeholder="Password">
+        <h2 class="forget">Forget Password?</h2>
+        <a href="#" class="link">Log In</a>
+        <h3 class="log">Or Log in With</h3>
+        <h4>Login With Google</h4>
+        <img src="./google.png" class="google">
+        <h5>Login With Apple</h5>
+        <img src="./apple2.png" class="apple">
+        <p class="be">B</p>
+    </div>
+</body>
+</html>
